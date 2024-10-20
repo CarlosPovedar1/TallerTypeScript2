@@ -1,0 +1,77 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo del contenedor */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.table thead th {
+    padding: 12px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table tbody td {
+    padding: 12px;
+}
+
+.table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del pie de página (p) */
+#promedio {
+    text-align: center;
+    font-size: 16px;
+    color: #0a0a0a;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fondo_azul{
+    background-color:rgb(24, 186, 236);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
