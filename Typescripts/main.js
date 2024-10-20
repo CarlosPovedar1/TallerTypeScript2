@@ -36,16 +36,22 @@ function getTemporadasProm(series) {
     return totalTemporadas/nSeries;
 }
 function showDetails(serie) {
+  
+
+    // Verificar si 'imageUrl' está definida y es válida
+    const imagenSrc = serie.imageUrl ? serie.imageUrl : 'https://via.placeholder.com/150';
+
     seriesDetailContainer.innerHTML = `
     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${serie.image}" alt="${serie.title}">
+        <img class="card-img-top" src="${imagenSrc}" alt="${serie.nombre}" onerror="this.src='https://via.placeholder.com/150';">
         <div class="card-body">
-            <h5 class="card-title">${serie.title}</h5>
-            <p class="card-text">${serie.description}</p>
-            <a href="${serie.url}" class="btn btn-primary">Más información</a>
+            <h5 class="card-title">${serie.nombre}</h5>
+            <p class="card-text">${serie.descripcion}</p>
+            <a href="${serie.link}" class="btn btn-primary" target="_blank">Más información</a>
         </div>
     </div>
     `;
 }
+
 
 

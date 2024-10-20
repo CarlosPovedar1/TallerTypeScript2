@@ -1,18 +1,19 @@
 export class Serie{
     id: number;
-    nombre: string;
-    canal: string;
+    nombre: String;
+    canal: String;
     temporada: number;
-    descripcion :string;
-    link:string;
-    imagenUrl:string;
-    constructor(id: number, nombre: string, canal: string, temporadas: number, descripcion: string, link:string, imagenUrl:string){
-        this.id = id;
-        this.nombre = nombre;
-        this.canal = canal;
-        this.temporada = temporadas;
-        this.descripcion = descripcion;
-        this.link = link;
-        this.imagenUrl = imagenUrl;
-    }
+    descripcion :String;
+    link:String;
+    imageUrl:String;
+    constructor(id, nombre, canal, temporada, descripcion, link, imageUrl) {
+            this.id = id;
+            this.nombre = nombre;
+            this.canal = canal;
+            this.temporada = temporada;
+            this.descripcion = descripcion;
+            this.link = link;
+            this.imageUrl = imageUrl;
+        }
+    
 }
